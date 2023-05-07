@@ -404,16 +404,19 @@ FEATURES
 
 .book__title--skeleton {
   height: 21px;
+  background-color: rgb(204, 204, 204);
   width: 100%;
 }
 
 .book__rating--skeleton {
   width: 100px;
+  background-color: rgb(204, 204, 204);
   height: 19px;
 }
 
 .book__price--skeleton {
   width : 200px;
+  background-color: rgb(204, 204, 204);
   height: 19px;
 }
 
