@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from 'react-router-dom'
 import Rating from "../components/ui/Rating";
 import Price from "../components/ui/Price";
-import { useParams } from "react-router-dom/cjs/react-router-dom";
+import { useParams } from "react-router-dom";
 import Book from "../components/ui/Book";
 
 const BooksInfo = ({ books, addToCart, cart }) => {

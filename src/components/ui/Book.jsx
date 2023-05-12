@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import Rating from "./Rating";
 import Price from "./Price";
@@ -13,16 +12,15 @@ const Book = ({ book }) => {
     const image = new Image();
     image.src = book.url;
     image.onload = () => {
-      setTimeout(() => {
-        if(mountedRef.current){
-            setImg(image);
-        }
-      }, 350);
+    if (mountedRef.current) {
+      setImg(image);
+    }
+    
     };
     return () => {
-        // WHEN THE COMPONENT UNMOUNTS
-        mountedRef.current = false
-    }
+      // WHEN THE COMPONENT UNMOUNTS
+      mountedRef.current = false;
+    };
   });
 
   return (

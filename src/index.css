@@ -417,7 +417,7 @@ FEATURES
 }
 
 .book__price--skeleton {
-  width : 200px;
+  width : 150px;
   background-color: rgb(204, 204, 204);
   margin: 3px 2px;
   height: 19px;
