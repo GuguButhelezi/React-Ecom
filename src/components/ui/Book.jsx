@@ -12,16 +12,22 @@ const Book = ({ book }) => {
     const image = new Image();
     image.src = book.url;
     image.onload = () => {
-    if (mountedRef.current) {
-      setImg(image);
-    }
-    
+      setTimeout(() => {
+          setImg(image);
+        
+      }, 300);
     };
     return () => {
-      // WHEN THE COMPONENT UNMOUNTS
       mountedRef.current = false;
     };
   });
+
+  useEffect(() => {
+    if (img) {
+      mountedRef.current = true
+    }
+  }, [img])
+  
 
   return (
     <div className="book">
